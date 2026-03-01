@@ -138,8 +138,8 @@ A full-stack productivity platform engineered with a **zero-trust backend**. Tas
 
 | Place | Event | Details |
 |---|---|---|
-| 🥉 **4th** | Google Cloud Hackathon | GoogleDevs Sprint 2K25 · VIT-AP × Google Cloud · Mar 2025 |
-| 🎉 **7th** | Simverse Hackathon | VIT-AP University · Jan 2026 · Goodies prize awarded |
+| 🥉 **4th** | Google Cloud Hackathon | GoogleDevs Sprint 2K25 · VIT-AP × Google Cloud · Mar 2025 · 486 participants |
+| 🎉 **7th** | Simverse Hackathon | VIT-AP University · Jan 2026 · 200 in-college + Unstop participants · Goodies prize |
 | 🌐 **GSSoC** | Tech Contributor 2025 | GirlScript Summer of Code · DataSentience-AIML |
 
 ---
