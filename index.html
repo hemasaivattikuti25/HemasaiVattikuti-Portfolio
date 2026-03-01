@@ -357,7 +357,7 @@
       font-size: 9px;
       text-transform: uppercase;
       letter-spacing: 2px;
-      color: var(--tx3);
+      color: var(--tx2);
       margin-top: 4px;
     }
 
@@ -1222,6 +1222,13 @@
       height: 100%;
       background: linear-gradient(90deg, var(--gold), rgba(200, 168, 75, 0.3));
       border-radius: 2px;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .skill-bar.animated {
+      transform: scaleX(1);
     }
 
     /* ========== CONTACT ========== */
@@ -1339,6 +1346,70 @@
       color: var(--gold);
     }
 
+    /* HAMBURGER */
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+      background: none;
+      border: none;
+    }
+
+    .nav-hamburger span {
+      display: block;
+      width: 22px;
+      height: 1.5px;
+      background: var(--tx2);
+      transition: all .25s;
+    }
+
+    .nav-hamburger.open span:nth-child(1) {
+      transform: rotate(45deg) translate(4.5px, 4.5px);
+    }
+
+    .nav-hamburger.open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .nav-hamburger.open span:nth-child(3) {
+      transform: rotate(-45deg) translate(4.5px, -4.5px);
+    }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background: rgba(6, 6, 6, 0.97);
+      backdrop-filter: blur(24px);
+      border-bottom: 1px solid var(--ln);
+      z-index: 499;
+      padding: 24px 24px;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .mobile-menu.open {
+      display: flex;
+    }
+
+    .mobile-menu a {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      color: var(--tx2);
+      transition: color .2s;
+      padding: 4px 0;
+    }
+
+    .mobile-menu a:hover {
+      color: var(--tx);
+    }
+
     /* RESPONSIVE */
     @media(max-width:900px) {
       .nav {
@@ -1347,6 +1418,10 @@
 
       .nav-links {
         display: none;
+      }
+
+      .nav-hamburger {
+        display: flex;
       }
 
       .hero {
@@ -1402,7 +1477,20 @@
       <a href="#contact">Contact</a>
     </div>
     <a href="mailto:hemasaivattikuti2727@gmail.com" class="nav-cta">Hire Me →</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#mithra" onclick="closeMobileMenu()">Mithra</a>
+    <a href="#projects" onclick="closeMobileMenu()">Projects</a>
+    <a href="#experience" onclick="closeMobileMenu()">Experience</a>
+    <a href="#certifications" onclick="closeMobileMenu()">Certificates</a>
+    <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+    <a href="mailto:hemasaivattikuti2727@gmail.com" class="nav-cta" style="width:fit-content;margin-top:4px;">Hire Me
+      →</a>
+  </div>
 
   <!-- HERO -->
   <section class="hero" id="top">
@@ -1744,12 +1832,13 @@
       <div class="ach-card">
         <div class="ach-place" style="color:var(--gold);">4th</div>
         <div class="ach-event">Google Cloud Hackathon</div>
-        <div class="ach-detail">GoogleDevs Sprint 2K25<br>VIT-AP × Google Cloud · Mar 2025</div>
+        <div class="ach-detail">GoogleDevs Sprint 2K25 · VIT-AP × Google Cloud<br>Mar 2025 · 486 participants</div>
       </div>
       <div class="ach-card">
         <div class="ach-place" style="color:var(--gn);">7th</div>
         <div class="ach-event">Simverse Hackathon</div>
-        <div class="ach-detail">VIT-AP University<br>Jan 2026 · Goodies prize awarded</div>
+        <div class="ach-detail">VIT-AP University · Jan 2026<br>200 in-college + Unstop participants · Goodies prize
+        </div>
       </div>
       <div class="ach-card">
         <div class="ach-place" style="color:var(--pu);">GSSoC</div>
@@ -1875,7 +1964,7 @@
           <div class="clink-ico" style="background:var(--ora);">📞</div>
           <div class="clink-info">
             <div class="clink-label">Phone</div>
-            <div class="clink-val">+91 79937407469</div>
+            <div class="clink-val">+91 7993740469</div>
           </div>
           <div class="clink-arrow">→</div>
         </a>
@@ -2108,6 +2197,29 @@
       document.body.style.overflow = '';
     }
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModalDirect(); });
+
+    // HAMBURGER MENU
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+    });
+    function closeMobileMenu() {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+    }
+
+    // SKILL BAR ANIMATION ON SCROLL
+    const skillBars = document.querySelectorAll('.skill-bar');
+    const skillObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animated');
+        }
+      });
+    }, { threshold: 0.3 });
+    skillBars.forEach(bar => skillObserver.observe(bar));
   </script>
 </body>
 
