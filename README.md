@@ -184,8 +184,7 @@ All certificates are **verified and independently confirmed** by their issuing i
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=hemasaivattikuti25&show_icons=true&theme=dark&title_color=c8a84b&icon_color=2dd4a0&text_color=ede9e0&bg_color=060606&hide_border=true" width="48%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=hemasaivattikuti25&theme=black-ice&hide_border=true&stroke=0000&ring=c8a84b&fire=2dd4a0&currStreakLabel=c8a84b" width="48%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=hemasaivattikuti25&theme=black-ice&hide_border=true&stroke=0000&ring=c8a84b&fire=2dd4a0&currStreakLabel=c8a84b" width="400" />
 </p>
 
 ---
