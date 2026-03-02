@@ -5,13 +5,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Portfolio of Hemasai Vattikuti - Applied AI Engineer specializing in LLMs, Agentic AI, and production AI systems. Creator of Mithra Life OS.">
+    content="Backend & Applied AI Engineer building high-availability distributed systems and production LLM platforms. Engineered FastAPI backends with fault-tolerant MongoDB replica sets at DRDL–DRDO. Creator of Mithra Life OS — live AI platform serving 690+ users with RAG vector search, zero-trust RLS, and multiplayer workspaces.">
+  <meta name="keywords" content="Hemasai Vattikuti, AI Engineer, Backend Developer, FastAPI, LLMs, RAG, Agentic AI, DRDO, Mithra Life OS, Portfolio">
+  <meta name="author" content="Hemasai Vattikuti">
   <meta name="theme-color" content="#060606">
-  <meta property="og:title" content="Hemasai Vattikuti — AI Engineer">
-  <meta property="og:description"
-    content="Portfolio of Hemasai Vattikuti — Applied AI Engineer building production AI systems.">
+
+  <!-- Open Graph / LinkedIn / Facebook -->
   <meta property="og:type" content="website">
-  <title>Hemasai Vattikuti — AI Engineer</title>
+  <meta property="og:url" content="https://hemasaivattikuti25.github.io/HemasaiVattikuti-Portfolio/">
+  <meta property="og:title" content="Hemasai Vattikuti — Backend & Applied AI Engineer">
+  <meta property="og:description"
+    content="Building production AI systems & distributed backends. Creator of Mithra Life OS (690+ users). DRDO Defence Intern. FastAPI, LLMs, RAG, Zero-Trust Architecture.">
+  <meta property="og:image" content="https://hemasaivattikuti25.github.io/HemasaiVattikuti-Portfolio/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Hemasai Vattikuti — Backend & Applied AI Engineer Portfolio">
+  <meta property="og:site_name" content="Hemasai Vattikuti — Portfolio">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hemasai Vattikuti — Backend & Applied AI Engineer">
+  <meta name="twitter:description"
+    content="Building production AI systems & distributed backends. Creator of Mithra Life OS (690+ users). DRDO Defence Intern.">
+  <meta name="twitter:image" content="https://hemasaivattikuti25.github.io/HemasaiVattikuti-Portfolio/og-image.png">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://hemasaivattikuti25.github.io/HemasaiVattikuti-Portfolio/">
+
+  <title>Hemasai Vattikuti — Backend & Applied AI Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;700&display=swap"
@@ -1231,6 +1253,72 @@
       transform: scaleX(1);
     }
 
+    /* ========== EDUCATION ========== */
+    .edu-card {
+      background: var(--bg2);
+      border: 1px solid var(--ln);
+      border-radius: 12px;
+      padding: 40px;
+      display: flex;
+      gap: 28px;
+      align-items: flex-start;
+      transition: all .25s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .edu-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold), var(--gn), var(--bl));
+    }
+
+    .edu-card:hover {
+      border-color: rgba(200, 168, 75, .25);
+      transform: translateY(-2px);
+    }
+
+    .edu-icon {
+      font-size: 36px;
+      flex-shrink: 0;
+      margin-top: 4px;
+    }
+
+    .edu-school {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      line-height: 1.3;
+    }
+
+    .edu-degree {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 6px;
+    }
+
+    .edu-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: var(--tx3);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 16px;
+    }
+
+    .edu-courses {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
     /* ========== CONTACT ========== */
     .contact-wrap {
       display: grid;
@@ -1474,6 +1562,7 @@
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
       <a href="#certifications">Certificates</a>
+      <a href="#education">Education</a>
       <a href="#contact">Contact</a>
     </div>
     <a href="mailto:hemasaivattikuti2727@gmail.com" class="nav-cta">Hire Me →</a>
@@ -1487,6 +1576,7 @@
     <a href="#projects" onclick="closeMobileMenu()">Projects</a>
     <a href="#experience" onclick="closeMobileMenu()">Experience</a>
     <a href="#certifications" onclick="closeMobileMenu()">Certificates</a>
+    <a href="#education" onclick="closeMobileMenu()">Education</a>
     <a href="#contact" onclick="closeMobileMenu()">Contact</a>
     <a href="mailto:hemasaivattikuti2727@gmail.com" class="nav-cta" style="width:fit-content;margin-top:4px;">Hire Me
       →</a>
@@ -1498,24 +1588,29 @@
     <div class="hero-glow"></div>
     <div class="hero-glow2"></div>
     <div class="hero-content">
-      <div class="hero-eyebrow">Applied AI Engineer · VIT-AP · India</div>
+      <div class="hero-eyebrow">Backend & Applied AI Engineer · VIT-AP · India</div>
       <div class="hero-name">Hemasai<br><span class="dim">Vattikuti.</span></div>
-      <div class="hero-title">Building AI systems that ship to production</div>
+      <div class="hero-title">Building production AI systems & distributed backends</div>
       <p class="hero-desc">
-        Final year CSE student who builds <strong>real things</strong> — not just notebooks.
-        Creator of <strong>Mithra Life OS</strong>, a live AI-powered productivity platform
-        with vector embeddings, zero-trust security, and real users.
-        2× internships. 4× verified certifications. 2× hackathon placements.
+        Backend &amp; Applied AI Engineer building <strong>high-availability distributed systems</strong> and production LLM platforms.
+        Engineered <strong>FastAPI backends</strong> with fault-tolerant MongoDB replica sets at <strong>DRDL–DRDO</strong> (Ministry of Defence);
+        shipped <strong>Mithra Life OS</strong> — live AI platform serving <strong>690+ users</strong> with RAG vector search,
+        zero-trust RLS, and multiplayer workspaces.
       </p>
       <div class="hero-btns">
         <a href="https://mithra-lifeos.com" target="_blank" class="btn btn-p">→ Visit Mithra Live</a>
         <a href="https://github.com/hemasaivattikuti25" target="_blank" class="btn btn-g">GitHub</a>
         <a href="https://linkedin.com/in/hemsaivattikuti" target="_blank" class="btn btn-g">LinkedIn</a>
+        <a href="#contact" class="btn btn-g">Contact →</a>
       </div>
       <div class="hero-stats">
         <div class="hstat">
-          <div class="v">3</div>
-          <div class="l">Internships</div>
+          <div class="v">690+</div>
+          <div class="l">Active Users</div>
+        </div>
+        <div class="hstat">
+          <div class="v">2</div>
+          <div class="l">Production Internships</div>
         </div>
         <div class="hstat">
           <div class="v">4</div>
@@ -1524,10 +1619,6 @@
         <div class="hstat">
           <div class="v">2</div>
           <div class="l">Hackathon Placements</div>
-        </div>
-        <div class="hstat">
-          <div class="v">1</div>
-          <div class="l">Live Production App</div>
         </div>
       </div>
     </div>
@@ -1538,15 +1629,16 @@
     <div class="slabel">Featured Project</div>
     <div class="mithra-layout">
       <div>
-        <div class="m-badge"><span></span>Live at mithra-lifeos.com</div>
+        <div class="m-badge"><span></span>Live at mithra-lifeos.com · 690+ Users</div>
         <div class="m-name">Mithra Life OS</div>
-        <div class="m-sub">AI-Powered Productivity · Zero-Trust · Multiplayer</div>
+        <div class="m-sub">Full-Stack AI Productivity · Zero-Trust RLS · RAG · Multiplayer</div>
         <p class="m-desc">
-          A full-stack productivity platform engineered with a <strong>zero-trust backend</strong>.
-          Tasks, habits, Pomodoro sessions, mood logging, and AI-powered journaling — all in one dashboard.
-          <strong>Semantic search</strong> converts journals into 768-dimensional embeddings using Google Gemini,
-          enabling natural language queries over personal data.
-          The <strong>Blend</strong> feature creates real-time multiplayer accountability workspaces with join codes.
+          Deployed full-stack AI productivity platform (tasks, habits, Pomodoro, mood, journaling) serving
+          <strong>690+ active users</strong>. Zero-trust backend enforces <strong>Row-Level Security at the PostgreSQL layer</strong>
+          — data isolation holds even on direct Supabase API access.
+          Implemented <strong>RAG-style semantic search</strong> using 768-dim Gemini embeddings in pgvector;
+          cosine similarity surfaces contextually relevant journal entries from natural language queries.
+          <strong>Blend</strong> — real-time multiplayer workspaces via 6-char join codes with RLS-controlled selective cross-user data access.
         </p>
         <div class="chips">
           <span class="chip c-or">React</span>
@@ -1554,9 +1646,10 @@
           <span class="chip c-gn">Python</span>
           <span class="chip c-bl">Supabase</span>
           <span class="chip c-bl">PostgreSQL</span>
-          <span class="chip c-yw">Google Gemini</span>
+          <span class="chip c-yw">Gemini API</span>
           <span class="chip c-pu">pgvector</span>
           <span class="chip c-pu">Row-Level Security</span>
+          <span class="chip c-gn">Zero-Trust</span>
         </div>
         <div class="m-links">
           <a href="https://mithra-lifeos.com" target="_blank" class="mlink p">→ Live Demo</a>
@@ -1620,12 +1713,11 @@
       <div class="pcard">
         <div class="pcard-num">01</div>
         <div class="pcard-title">Mithra Life OS — AI Productivity Platform</div>
-        <div class="pcard-desc">Full-stack AI-powered life operating system with habit tracking, journaling, mood
-          analytics, and an intelligent AI assistant. Live at mithra-lifeos.com.</div>
+        <div class="pcard-desc">Deployed full-stack AI productivity platform (tasks, habits, Pomodoro, mood, journaling) serving <strong>690+ active users</strong>; zero-trust backend enforces <strong>Row-Level Security at the PostgreSQL layer</strong> — data isolation holds even on direct Supabase API access. Implemented <strong>RAG-style semantic search</strong> using 768-dim Gemini embeddings in pgvector.</div>
         <div class="chips" style="margin-bottom:16px;">
           <span class="chip c-gn">React</span><span class="chip c-or">FastAPI</span><span
-            class="chip c-yw">LangChain</span><span class="chip c-bl">Supabase</span><span
-            class="chip c-pu">OpenAI</span>
+            class="chip c-bl">Supabase</span><span class="chip c-bl">PostgreSQL</span><span
+            class="chip c-yw">Gemini API</span><span class="chip c-pu">pgvector</span>
         </div>
         <div class="pcard-links">
           <a href="https://mithra-lifeos.com" target="_blank" class="plink">Live →</a>
@@ -1634,12 +1726,12 @@
       </div>
       <div class="pcard">
         <div class="pcard-num">02</div>
-        <div class="pcard-title">DRDL Backend System</div>
-        <div class="pcard-desc">Backend services for a distributed system built at Defence Research & Development
-          Laboratory under Ministry of Defence, Govt. of India.</div>
+        <div class="pcard-title">DRDL Defence Asset Management System</div>
+        <div class="pcard-desc">Architected a <strong>3-node MongoDB Replica Set</strong> with automatic PRIMARY election and sub-10s failover. Built production-grade FastAPI backend with JWT auth, RBAC, rate limiting. Dockerized full stack with background health monitor auto-triggering failover.</div>
         <div class="chips" style="margin-bottom:16px;">
           <span class="chip c-gn">FastAPI</span><span class="chip c-or">Python</span><span
-            class="chip c-bl">MongoDB</span><span class="chip c-yw">Distributed Systems</span>
+            class="chip c-bl">MongoDB Replica Sets</span><span class="chip c-yw">Docker</span><span
+            class="chip c-pu">JWT / RBAC</span>
         </div>
         <div class="pcard-links">
           <a href="https://github.com/hemasaivattikuti25/drdo_p1" target="_blank" class="plink">GitHub →</a>
@@ -1648,8 +1740,7 @@
       <div class="pcard">
         <div class="pcard-num">03</div>
         <div class="pcard-title">Projectile Simulator</div>
-        <div class="pcard-desc">Physics-based projectile motion simulator built for the Simverse Hackathon at VIT-AP.
-          Deployed live on Vercel. Placed 7th out of 200+ participants and won goodies prize.</div>
+        <div class="pcard-desc">Real-time physics simulation for projectile motion. Placed <strong>7th of 200+</strong> at Simverse Hackathon, VIT-AP — awarded prize. Deployed live on Vercel.</div>
         <div class="chips" style="margin-bottom:16px;">
           <span class="chip c-or">JavaScript</span><span class="chip c-gn">Physics Simulation</span><span
             class="chip c-bl">Vercel</span><span class="chip c-yw">Hackathon</span>
@@ -1676,27 +1767,12 @@
             style="color:#ffa04d;background:rgba(255,160,77,.08);border:1px solid rgba(255,160,77,.2);">Ministry of
             Defence</span>
         </div>
-        <div class="tl-co">DRDL — DRDO, Hyderabad</div>
-        <div class="tl-role">Project Intern · Backend & Distributed Systems</div>
+        <div class="tl-co">Defence Research & Development Laboratory (DRDL — DRDO)</div>
+        <div class="tl-role">Project Intern · Backend & Distributed Systems · Hyderabad, India</div>
         <ul class="tl-pts">
-          <li>Built backend services under <strong>Scientist 'E'</strong>, Ministry of Defence, Govt. of India for a
-            full-stack distributed system application</li>
-          <li>Responsible for <strong>FastAPI backend development</strong> and distributed database architecture in a
-            defence research environment</li>
-        </ul>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-date">
-          Jan 2025 – Jul 2025
-          <span class="tl-pill"
-            style="color:var(--pu);background:var(--pua);border:1px solid rgba(167,139,250,.2);">ML</span>
-        </div>
-        <div class="tl-co">Launched Global / Btech Walleh</div>
-        <div class="tl-role">Machine Learning Mentorship Programme</div>
-        <ul class="tl-pts">
-          <li>Completed structured mentorship programme covering supervised learning, model evaluation, and applied ML
-            engineering</li>
+          <li>Architected a <strong>3-node MongoDB Replica Set</strong> with automatic PRIMARY election and <strong>sub-10s failover</strong> for a mission-critical Defence Asset Management System under Scientist 'E', Ministry of Defence, Govt. of India</li>
+          <li>Built production-grade <strong>FastAPI</strong> backend with JWT authentication, RBAC, and rate limiting; <strong>DatabaseManager</strong> auto-switches to standalone mode on replica failure</li>
+          <li>Dockerized full stack (3×MongoDB + FastAPI + React/nginx) with background health monitor polling CPU and DB every <strong>30s</strong>, auto-triggering failover on threshold breach</li>
         </ul>
       </div>
       <div class="tl-item">
@@ -1707,12 +1783,10 @@
             Engineering</span>
         </div>
         <div class="tl-co">Embrizon Technologies Pvt. Ltd.</div>
-        <div class="tl-role">Artificial Intelligence Intern</div>
+        <div class="tl-role">Artificial Intelligence Intern · Remote</div>
         <ul class="tl-pts">
-          <li>Completed AI engineering programme focused on <strong>building and training AI agent models</strong> for
-            production deployment</li>
-          <li>Received formal <strong>Letter of Recommendation from Founder & CEO</strong> — recognised as outstanding
-            learner with exceptional dedication</li>
+          <li>Built <strong>FastAPI</strong> backend and chatbot training pipeline for a production AI product</li>
+          <li>Received formal <strong>Letter of Recommendation from Founder & CEO</strong> — recognised for exceptional dedication and strong engineering output</li>
         </ul>
       </div>
     </div>
@@ -1854,65 +1928,100 @@
     <div class="stitle">What I <em>Know</em></div>
     <div class="skills-cols">
       <div class="skill-group">
-        <div class="sg-title">AI / Machine Learning</div>
+        <div class="sg-title">AI / LLMs</div>
         <div class="skill-row">
           <div class="skill-top"><span class="skill-name">LangChain & Agentic AI</span><span
-              class="skill-label">Strong</span></div>
-          <div class="skill-track">
-            <div class="skill-bar" style="width:82%"></div>
-          </div>
-        </div>
-        <div class="skill-row">
-          <div class="skill-top"><span class="skill-name">Vector Embeddings & RAG</span><span
-              class="skill-label">Strong</span></div>
-          <div class="skill-track">
-            <div class="skill-bar" style="width:80%"></div>
-          </div>
-        </div>
-        <div class="skill-row">
-          <div class="skill-top"><span class="skill-name">Prompt Engineering</span><span
               class="skill-label">Strong</span></div>
           <div class="skill-track">
             <div class="skill-bar" style="width:85%"></div>
           </div>
         </div>
         <div class="skill-row">
-          <div class="skill-top"><span class="skill-name">Supervised ML (Stanford)</span><span
-              class="skill-label">Certified</span></div>
-          <div class="skill-track">
-            <div class="skill-bar" style="width:72%"></div>
-          </div>
-        </div>
-      </div>
-      <div class="skill-group">
-        <div class="sg-title">Engineering</div>
-        <div class="skill-row">
-          <div class="skill-top"><span class="skill-name">FastAPI / Python</span><span class="skill-label">Strong</span>
-          </div>
+          <div class="skill-top"><span class="skill-name">RAG & Vector Embeddings</span><span
+              class="skill-label">Strong</span></div>
           <div class="skill-track">
             <div class="skill-bar" style="width:82%"></div>
           </div>
         </div>
         <div class="skill-row">
-          <div class="skill-top"><span class="skill-name">React / Frontend</span><span class="skill-label">Solid</span>
-          </div>
-          <div class="skill-track">
-            <div class="skill-bar" style="width:68%"></div>
-          </div>
-        </div>
-        <div class="skill-row">
-          <div class="skill-top"><span class="skill-name">Supabase / PostgreSQL</span><span
+          <div class="skill-top"><span class="skill-name">Prompt Engineering & OpenAI API</span><span
               class="skill-label">Strong</span></div>
           <div class="skill-track">
-            <div class="skill-bar" style="width:76%"></div>
+            <div class="skill-bar" style="width:84%"></div>
           </div>
         </div>
         <div class="skill-row">
-          <div class="skill-top"><span class="skill-name">System Architecture</span><span
-              class="skill-label">Growing</span></div>
+          <div class="skill-top"><span class="skill-name">Hugging Face & NLP</span><span
+              class="skill-label">Solid</span></div>
           <div class="skill-track">
-            <div class="skill-bar" style="width:62%"></div>
+            <div class="skill-bar" style="width:72%"></div>
           </div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top"><span class="skill-name">Supervised ML (Stanford Certified)</span><span
+              class="skill-label">Certified</span></div>
+          <div class="skill-track">
+            <div class="skill-bar" style="width:75%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="sg-title">Backend & Infrastructure</div>
+        <div class="skill-row">
+          <div class="skill-top"><span class="skill-name">Python & FastAPI</span><span class="skill-label">Strong</span></div>
+          <div class="skill-track">
+            <div class="skill-bar" style="width:88%"></div>
+          </div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top"><span class="skill-name">PostgreSQL, MongoDB & Supabase</span><span
+              class="skill-label">Strong</span></div>
+          <div class="skill-track">
+            <div class="skill-bar" style="width:80%"></div>
+          </div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top"><span class="skill-name">JWT Auth, RBAC & RLS</span><span
+              class="skill-label">Strong</span></div>
+          <div class="skill-track">
+            <div class="skill-bar" style="width:78%"></div>
+          </div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top"><span class="skill-name">Docker & Distributed Systems</span><span
+              class="skill-label">Solid</span></div>
+          <div class="skill-track">
+            <div class="skill-bar" style="width:72%"></div>
+          </div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top"><span class="skill-name">React.js & JavaScript</span><span
+              class="skill-label">Solid</span></div>
+          <div class="skill-track">
+            <div class="skill-bar" style="width:70%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="sec sec-alt" id="education">
+    <div class="slabel">Education</div>
+    <div class="stitle">Where I <em>Study</em></div>
+    <div class="edu-card">
+      <div class="edu-icon">🎓</div>
+      <div class="edu-info">
+        <div class="edu-school">Vellore Institute of Technology — Andhra Pradesh (VIT-AP)</div>
+        <div class="edu-degree">B.Tech, Computer Science and Engineering</div>
+        <div class="edu-date">2023 – 2027 · Amaravati, AP</div>
+        <div class="edu-courses">
+          <span class="chip c-bl">DSA</span>
+          <span class="chip c-gn">Machine Learning</span>
+          <span class="chip c-pu">NLP</span>
+          <span class="chip c-or">DBMS</span>
+          <span class="chip c-yw">Linear Algebra</span>
+          <span class="chip c-bl">Web Technologies</span>
         </div>
       </div>
     </div>
@@ -1924,8 +2033,7 @@
       <div>
         <div class="slabel">Contact</div>
         <div class="contact-title">Let's build<br>something <em>real.</em></div>
-        <p class="contact-sub">Looking for AI engineering roles at ambitious startups. If you're building with LLMs,
-          agents, RAG, or production AI systems — reach out.</p>
+        <p class="contact-sub">Backend & Applied AI Engineer looking for roles building distributed systems, LLM platforms, agentic AI, and production backends. If you're shipping real software — let's talk.</p>
       </div>
       <div class="clinks">
         <a href="mailto:hemasaivattikuti2727@gmail.com" class="clink">
@@ -1960,11 +2068,11 @@
           </div>
           <div class="clink-arrow">→</div>
         </a>
-        <a href="tel:+917993740469" class="clink">
+        <a href="tel:+9179937407469" class="clink">
           <div class="clink-ico" style="background:var(--ora);">📞</div>
           <div class="clink-info">
             <div class="clink-label">Phone</div>
-            <div class="clink-val">+91 7993740469</div>
+            <div class="clink-val">+91 79937407469</div>
           </div>
           <div class="clink-arrow">→</div>
         </a>
