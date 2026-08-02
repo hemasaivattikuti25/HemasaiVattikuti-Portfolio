@@ -667,7 +667,7 @@
             </div>
 
             <div class="w-full max-h-52 sm:max-h-72 overflow-hidden rounded-xl sm:rounded-2xl border border-white/10 shadow-2xl bg-[#050505] flex items-center justify-center p-3 sm:p-4">
-              ${sys.previewImg ? `<img src="${sys.previewImg}" alt="${sys.title}" class="max-h-44 sm:max-h-64 w-auto object-contain rounded-xl">` : sys.previewSvg}
+              ${sys.previewImg ? `<img src="${sys.previewImg}" alt="${sys.title}" class="max-h-44 sm:max-h-64 w-auto object-contain rounded-xl">` : (sys.previewSvg || '')}
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-2 font-mono text-xs">
@@ -915,17 +915,27 @@
       const sys = data.featuredSystems.find(s => s.id === id);
       if (!sys) return;
 
-      document.getElementById('cs-badge').innerText = sys.badge;
-      document.getElementById('cs-title').innerText = sys.title;
-      document.getElementById('cs-subtitle').innerText = sys.subtitle;
-      document.getElementById('cs-preview').innerHTML = sys.previewSvg;
-      document.getElementById('cs-problem').innerText = sys.problem;
-      document.getElementById('cs-outcome').innerText = sys.outcome;
+      document.getElementById('cs-badge').innerText = sys.badge || '';
+      document.getElementById('cs-title').innerText = sys.title || '';
+      document.getElementById('cs-subtitle').innerText = sys.subtitle || '';
+
+      // Render preview: use image if available, else SVG markup, else empty
+      const previewEl = document.getElementById('cs-preview');
+      if (sys.previewImg) {
+        previewEl.innerHTML = `<img src="${sys.previewImg}" alt="${sys.title}" class="max-h-64 w-auto object-contain rounded-xl mx-auto">`;
+      } else if (sys.previewSvg) {
+        previewEl.innerHTML = sys.previewSvg;
+      } else {
+        previewEl.innerHTML = '';
+      }
+
+      document.getElementById('cs-problem').innerText = sys.problem || '';
+      document.getElementById('cs-outcome').innerText = sys.outcome || '';
 
       if (sys.deepDive) {
-        document.getElementById('cs-decisions').innerHTML = sys.deepDive.keyDecisions.map(d => `<li>${d}</li>`).join('');
-        document.getElementById('cs-failure').innerText = sys.deepDive.failureModes;
-        document.getElementById('cs-roadmap').innerText = sys.deepDive.futureRoadmap;
+        document.getElementById('cs-decisions').innerHTML = (sys.deepDive.keyDecisions || []).map(d => `<li>${d}</li>`).join('');
+        document.getElementById('cs-failure').innerText = sys.deepDive.failureModes || '';
+        document.getElementById('cs-roadmap').innerText = sys.deepDive.futureRoadmap || '';
       }
 
       const linksDiv = document.getElementById('cs-links');
