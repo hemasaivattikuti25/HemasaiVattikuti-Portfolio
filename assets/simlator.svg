@@ -1,0 +1,17 @@
+<svg viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-full bg-[#050505]">
+  <rect width="600" height="200" fill="#050505"/>
+  <g transform="translate(150, 35)">
+    <path d="M 50 75 Q 150 15 250 75" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="5,4"/>
+    <circle cx="150" cy="45" r="5" fill="#00d2ff"/>
+    <text x="150" y="95" fill="#00d2ff" font-size="20" font-weight="900" text-anchor="middle" font-family="Space Grotesk, sans-serif" letter-spacing="4">PROJECTILE</text>
+    <text x="150" y="118" fill="#a855f7" font-size="20" font-weight="900" text-anchor="middle" font-family="Space Grotesk, sans-serif" letter-spacing="4">SIMULATOR</text>
+    <text x="150" y="138" fill="#8899a6" font-size="9" text-anchor="middle" font-family="monospace">Developed by Hemasai Vattikuti</text>
+    <rect x="75" y="145" width="150" height="3" rx="1.5" fill="url(#projBarGrad)"/>
+    <defs>
+      <linearGradient id="projBarGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#00d2ff"/>
+        <stop offset="100%" stop-color="#a855f7"/>
+      </linearGradient>
+    </defs>
+  </g>
+</svg>

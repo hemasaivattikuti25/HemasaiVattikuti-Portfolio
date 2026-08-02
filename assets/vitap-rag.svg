@@ -1,0 +1,15 @@
+<svg viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-full bg-[#050505]">
+  <rect width="600" height="200" fill="#050505"/>
+  <g transform="translate(180, 50)">
+    <circle cx="50" cy="50" r="42" fill="none" stroke="#00d2ff" stroke-width="2.5"/>
+    <path d="M 12 50 A 38 38 0 0 1 50 12" fill="none" stroke="#e02677" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 88 50 A 38 38 0 0 1 50 88" fill="none" stroke="#e02677" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 50 26 L 80 40 L 50 54 L 20 40 Z" fill="#38bdf8" stroke="#ffffff" stroke-width="1.5"/>
+    <path d="M 32 46 L 32 64 C 32 70, 68 70, 68 64 L 68 46" fill="#0284c7" stroke="#ffffff" stroke-width="1.5"/>
+    <circle cx="80" cy="40" r="3.5" fill="#ffffff"/>
+    <line x1="80" y1="40" x2="80" y2="62" stroke="#ffffff" stroke-width="1.5"/>
+    <circle cx="80" cy="64" r="4" fill="#38bdf8"/>
+    <text x="110" y="52" fill="#ffffff" font-size="28" font-weight="900" font-family="Space Grotesk, sans-serif">vitap-<tspan fill="#00d2ff">UniOs</tspan></text>
+    <text x="112" y="72" fill="#8899a6" font-size="9" font-weight="700" font-family="monospace" letter-spacing="2.5">CAMPUS INTELLIGENCE ENGINE</text>
+  </g>
+</svg>

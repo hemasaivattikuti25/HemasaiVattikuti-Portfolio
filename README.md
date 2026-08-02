@@ -85,30 +85,37 @@ A full-stack productivity platform engineered with a **zero-trust backend**. Tas
 
 ## 🗂️ All Projects
 
-### 01 — Mitra.ai · AI Backend Service
-> Async AI backend exposing chatbot, summarisation, and task automation via FastAPI endpoints. Powered by LangChain and Hugging Face models.
+### 01 — Mithra Life OS
+> Full-stack AI productivity platform combining task management, habit tracking, journaling, and focus tools. Built offline-first. Deployed to production with 941 real users.
 
-`FastAPI` `LangChain` `Hugging Face` `OpenAI API`
+`React` `FastAPI` `Neon PostgreSQL` `Gemini 2.5` `pgvector` `Capacitor`
 
-🔗 [GitHub](https://github.com/hemasaivattikuti25)
+🔗 [Live Demo](https://mithra-lifeos.com) · [GitHub](https://github.com/hemasaivattikuti25/Mithra-AI-life-os)
 
 ---
 
-### 02 — DRDL Backend System
-> Backend services for a distributed system built at Defence Research & Development Laboratory under Ministry of Defence, Govt. of India.
+### 02 — VITAp-UniOS
+> Production RAG campus assistant answering student questions about VIT-AP. Engineered to run within 512MB RAM using FastEmbed ONNX runtime.
 
-`FastAPI` `Python` `MongoDB` `Distributed Systems`
+`Next.js` `FastAPI` `Qdrant` `FastEmbed ONNX` `Groq Llama-3` `Playwright`
+
+🔗 [GitHub](https://github.com/hemasaivattikuti25/vitap-rag)
+
+---
+
+### 03 — DRDO — Defence Asset Management System
+> Designed a 3-node MongoDB Replica Set with automatic PRIMARY election and sub-10s hot failover for a mission-critical asset management system under Scientist E.
+
+`FastAPI` `MongoDB Replica Set` `Docker Compose` `JWT` `RBAC`
 
 🔗 [GitHub](https://github.com/hemasaivattikuti25/drdo_p1)
 
 ---
 
-### 03 — Projectile Simulator *(Hackathon — 7th Place)*
-> Physics-based projectile motion simulator built for the Simverse Hackathon at VIT-AP. Deployed live on Vercel. Placed 7th out of all participants and won goodies prize.
+### 04 — Orion Movers
+> Complete commercial web application for a New Zealand moving company. Quote form to email to CRM fully automated. Achieved page-one Google SEO ranking.
 
-`JavaScript` `Physics Simulation` `Vercel`
-
-🔗 [Live Demo](https://projectile-simulator-rho.vercel.app) · [GitHub](https://github.com/hemasaivattikuti25/Projectile-simulator)
+`Next.js` `FastAPI` `Supabase` `Resend API` `Google Sheets CRM`
 
 ---
 
@@ -116,21 +123,23 @@ A full-stack productivity platform engineered with a **zero-trust backend**. Tas
 
 ### 🏛️ DRDL — DRDO, Hyderabad *(Aug 2025 – Nov 2025)*
 **Project Intern · Backend & Distributed Systems** | *Ministry of Defence, Govt. of India*
-- Built backend services under **Scientist 'E'**, Ministry of Defence, Govt. of India for a full-stack distributed system application
-- Responsible for **FastAPI backend development** and distributed database architecture in a defence research environment
+- Architected a **3-node MongoDB Replica Set** with automatic PRIMARY election and sub-10s failover for DAMS v3.0 under Scientist 'E', Ministry of Defence
+- Built production-grade **FastAPI** backend with JWT auth, RBAC, and IP-level rate limiting
+- Dockerized the full stack with background health monitors polling every 30s
+
+---
+
+### 🚚 Orion Movers, New Zealand (Remote) *(Jun 2026 – Jul 2026)*
+**Freelance Full-Stack Developer**
+- Built and shipped a complete commercial product including Next.js frontend, FastAPI backend, and Google Sheets CRM integration
+- Engineered automated quote-to-lead pipeline and implemented deep technical SEO, ranking target queries on Google page one
 
 ---
 
 ### 🤖 Embrizon Technologies Pvt. Ltd. *(Nov 2024 – Jan 2025)*
 **Artificial Intelligence Intern**
-- Completed AI engineering programme focused on **building and training AI agent models** for production deployment
-- Received formal **Letter of Recommendation from Founder & CEO** — recognised as outstanding learner with exceptional dedication
-
----
-
-### 🎓 Launched Global / Btech Walleh *(Jan 2025 – Jul 2025)*
-**Machine Learning Mentorship Programme**
-- Completed structured mentorship programme covering supervised learning, model evaluation, and applied ML engineering
+- Completed AI engineering programme focused on building and training AI agent models for production deployment
+- Received formal **Letter of Recommendation from Founder & CEO** recognizing outstanding learning and strong engineering output
 
 ---
 
